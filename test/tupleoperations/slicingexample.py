@@ -1,0 +1,15 @@
+elements = ("Mango",100,True,10.175,False,"Lotus","Sunflower","Orange","Sparrow")
+print(elements)
+print(elements[4])
+print(elements[1:5])
+print(elements[:5])
+print(elements[3:])
+
+print(elements[-7:-3])
+print(elements[-6:])  #(10.175, False, 'Lotus', 'Sunflower', 'Orange', 'Sparrow')
+print(elements[-3:-1])  #('Sunflower', 'Orange')
+print(elements[-2:])    #('Orange', 'Sparrow')
+print(elements[:])       #('Mango', 100, True, 10.175, False, 'Lotus', 'Sunflower', 'Orange', 'Sparrow')    
+print(elements[::-1])   #('Sparrow', 'Orange', 'Sunflower', 'Lotus', False, 10.175, True, 100, 'Mango') 
+print(elements[::-2])    #('Sparrow', 'Sunflower', 'Lotus', False, True)
+print(elements[::2])   #('Mango', True, False, 'Sunflower', 'Sparrow'
