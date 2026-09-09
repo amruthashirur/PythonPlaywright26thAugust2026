@@ -1,32 +1,31 @@
-#sort -sorts the elements in the list
-cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"]
-cities.sort()
+# Declare a List
+cities = ["Mysore","Hassan",45,100,True,10.75,False,"Sira"]
+
+# Extend - > We can add one more list into teh existing list
+states=["Karnataka","Kerala","Tamilandu","Maharstra"]
+cities.extend(states)
+# Print the cities
 print(cities)
 
-numbers=[5, 3, 8, 1, 2,2]
+# index -> It find teh location of teh element [index of the Element]
+print(cities.index("Sira"))
+
+# copy List -> it copies teh existing list and it return a copied list
+newcities=cities.copy()
+print(newcities)
+
+# reverse -> It reverses the Elements in the List
+newcities.reverse()
+print(newcities)
+
+# sort  -> It sorts the Elements in the List
+numbers = [40,90,10,50,20,50,30,50,70]
 numbers.sort()
 print(numbers)
 
-# count - provides the count of duplicate elements
-numbers.count(3)
-print(numbers.count(2))
-print(numbers.count(5))
+# count -> It provides the count of duplicate Element
+print(numbers.count(50))
 
-#list extend
-cities=["Mysore","Hassan",45,100,True,10.75,False,"Sira"]
-more_cities=["Bangalore","Mangalore"]
-cities.extend(more_cities)
-print(cities)
-
-#Index - provides the index of the first occurrence of an element
-print(cities.index("Hassan"))
-print(cities.index("Sira"))
-
-#copy list 
-cities_copy = cities.copy()
-print(cities_copy)  
-
-
-#reverse - reverses the elements in the list
-cities.reverse()
-print(cities)   
+# Clear - >It removes all Elements and make it as empty list
+numbers.clear()
+print(numbers)
